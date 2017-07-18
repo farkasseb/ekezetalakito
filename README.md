@@ -1,6 +1,6 @@
 # Ekezetalakito
 
-This is a simple gem used to convert acute Hungarian accents to utf-8 accented characters. I've created it to practice building a Ruby gem. Its whole functionaly can be substituded with [`unicode_normalize`](http://ruby-doc.org/stdlib-2.2.0/libdoc/unicode_normalize/rdoc/String.html#method-i-unicode_normalize) function from Ruby 2.2.
+This is a simple gem used to convert acute Hungarian accents to utf-8 accented characters. I've created it to practice building a Ruby gem. Its whole functionaly can be substituted with [`unicode_normalize`](http://ruby-doc.org/stdlib-2.2.0/libdoc/unicode_normalize/rdoc/String.html#method-i-unicode_normalize) function from Ruby 2.2.
 
 ## Installation
 
