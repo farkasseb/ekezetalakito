@@ -1,11 +1,9 @@
-# encoding: utf-8
-require "ekezetalakito/version"
+require 'ekezetalakito/version'
 
 module Ekezetalakito
+  ACUTE_ACCENTS = ["\u0301", "\u0308" ,"\u030b"].freeze
 
-  ACUTE_ACCENTS = ["\u0301", "\u0308" ,"\u030b"]
-
-  # Hungarian accented letters: 
+  # Hungarian accented letters:
   # árvíztűrő tükörfúrógép
   # ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP
   ACCENTED_LETTERS_MAP = {
@@ -27,7 +25,7 @@ module Ekezetalakito
     Ú: "U\u0301",
     Ó: "O\u0301",
     É: "E\u0301"
-  }
+  }.freeze
 
   def self.convert(text)
     if contains_acute_accent(text)
@@ -41,10 +39,9 @@ module Ekezetalakito
 
   def self.contains_acute_accent(text)
     ACUTE_ACCENTS.each do |accent|
-      return true if text.index(accent) != nil
+      return true unless text.index(accent).nil?
     end
 
-    return false
+    false
   end
- 
 end
