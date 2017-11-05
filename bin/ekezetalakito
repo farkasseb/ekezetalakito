@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'ekezetalakito'
+
+clipboard_content = Ekezetalakito::ClipboardHelper.pbpaste
+clipboard_content = Ekezetalakito.convert(clipboard_content)
+Ekezetalakito::ClipboardHelper.pbcopy(clipboard_content)
