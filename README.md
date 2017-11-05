@@ -20,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-Call the `convert` method by giving a convertable text to it.
+Currently there are two way you can use this gem.
+
+First you can call the `convert` method by giving a convertable text to it.
+
+Second you can put some text to the Clipboard with accute accents and then (after having successfully installed the gem) running `ekezetalakito` in the command line. This will convert the Clipboard's content.
 
 ## Contributing
 
