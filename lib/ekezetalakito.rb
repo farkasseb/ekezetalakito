@@ -1,3 +1,4 @@
+require 'ekezetalakito/clipboard_helper'
 require 'ekezetalakito/version'
 
 module Ekezetalakito
